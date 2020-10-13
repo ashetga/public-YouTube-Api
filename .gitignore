@@ -1,2 +1,4 @@
 kg_testingPublicYTApi/
 __pycache__/
+src/secrets.py
+tests/secrets.py

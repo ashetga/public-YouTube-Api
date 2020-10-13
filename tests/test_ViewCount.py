@@ -1,7 +1,8 @@
 from app import getViewCount
+import secrets
 
 # validate the incoming viewCounts
 def test_ViewCount():
-    apiKey = 'AIzaSyAqNYjezkzxdh9IxPTbMAww0KMzH9MhQEc'
-    viewCount = getViewCount(apiKey, 'schafer5')
+    apiKey = secrets.apiKey
+    viewCount = getViewCount(apiKey, secrets.userName)
     assert int(viewCount) > 100000

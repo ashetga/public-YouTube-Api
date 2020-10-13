@@ -11,6 +11,7 @@ We will be retreiving some public channel's statistics and compute some fun KPIs
 
 from googleapiclient.discovery import build
 from pprint import pprint
+import secrets
 
 
 
@@ -34,8 +35,8 @@ def getViewCount(apiKey, userName):
 
 
 if __name__ == '__main__':
-    apiKey = 'AIzaSyAqNYjezkzxdh9IxPTbMAww0KMzH9MhQEc'
-    viewCount = getViewCount(apiKey, 'schafer5')
+    apiKey = secrets.apiKey
+    viewCount = getViewCount(apiKey, secrets.userName)
     
     print(viewCount)
 
