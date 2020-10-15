@@ -1,4 +1,4 @@
-kg_testingPublicYTApi/
+kg_ytApiTesting/
 __pycache__/
 src/secrets.py
 tests/test_secrets.py
