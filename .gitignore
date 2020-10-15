@@ -2,3 +2,6 @@ kg_ytApiTesting/
 __pycache__/
 src/secrets.py
 tests/test_secrets.py
+kg_ytApiTesting/bin/
+kg_ytApiTesting/lib/
+kg_ytApiTesting/pyvenv.cfg
