@@ -1,14 +1,13 @@
 """
 A simple app to test the functionality of google's Youtube Data Api
 
-We will be retreiving some public channel's statistics and compute some fun KPIs. 
+We will be retreiving the following stats
    - Top 5 high viewership videos in a channel
    - Compute total duration of the entire channel
 """
 
 
 from googleapiclient.discovery import build
-from pprint import pprint
 import secrets
 
 
