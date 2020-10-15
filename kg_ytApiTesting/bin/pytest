@@ -1,4 +1,4 @@
-#!/Users/macpro/Documents/code/repos/public-YouTube-Api/kg_ytApiTesting/bin/python3
+#!/Users/macpro/Documents/code/repos/public-YouTube-Api/kg_ytApiTesting/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
