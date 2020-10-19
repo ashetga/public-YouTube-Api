@@ -1,6 +1,5 @@
 import requests
 from pprint import pprint
-import json
 import secrets
 
 
@@ -11,7 +10,7 @@ def getTakeDownPct(authToken, header, url):
     totalAssets = len(assets)
 
     for asset in assets:
-        takeDowns += 1 if asset["is_taken_down"] == True else takeDowns
+        takeDowns += 1 if asset["is_taken_down"] else takeDowns
 
     return takeDowns // totalAssets
 
