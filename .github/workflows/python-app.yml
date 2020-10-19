@@ -40,4 +40,8 @@ jobs:
       run: |
         export PYTHONPATH=src
         py.test tests/test_ViewCount.py --apiKey "$API_KEY"
-
+    - name: Print from python script
+      shell: bash
+      run: |
+        export PYTHONPATH=src
+        python tests/test_Print.py
