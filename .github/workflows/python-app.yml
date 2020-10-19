@@ -42,6 +42,8 @@ jobs:
         py.test tests/test_ViewCount.py --apiKey "$API_KEY"
     - name: Print from python script
       shell: bash
+      env:
+        API_KEY: ${{ secrets.YT_API_KEY }}
       run: |
         export PYTHONPATH=src
-        python tests/test_Print.py
+        python tests/test_Print.py --apiKey "$API_KEY"
