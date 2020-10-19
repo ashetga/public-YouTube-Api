@@ -38,4 +38,4 @@ jobs:
         export PYTHONPATH=src
         py.test tests/test_ViewCount.py --apiKey "%API_KEY%"
       env: |
-        API_KEY = ${{ secrets.YT_API_KEY }}
+        API_KEY: ${{ secrets.YT_API_KEY }}
