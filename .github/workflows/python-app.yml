@@ -38,4 +38,4 @@ jobs:
         API_KEY: ${{ secrets.YT_API_KEY }}
       run: |
         export PYTHONPATH=src
-        py.test tests/test_ViewCount.py --apiKey "%API_KEY%"
+        py.test tests/test_ViewCount.py --apiKey %API_KEY%
