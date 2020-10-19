@@ -14,4 +14,4 @@ def test_ViewCount(apiKey):
     playListId = "PL-osiE80TeTsWmV9i9c58mdDCSskIFdDS"
     viewCount = getViewCount(playListId)
     print(f'viewCount: {viewCount}')
-    assert int(viewCount) != 0
+    assert int(viewCount) == 10
