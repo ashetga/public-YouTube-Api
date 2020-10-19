@@ -4,7 +4,10 @@ import secrets
 # validate the incoming viewCounts
 
 
-def test_ViewCount():
-    apiKey = secrets.apiKey
-    viewCount = getViewCount(apiKey, secrets.userName)
-    assert int(viewCount) > 100000
+def test_ViewCount(apiKey):
+    if not apiKey:
+        apiKey = secrets.apiKey
+
+    playListId = "PL-osiE80TeTsWmV9i9c58mdDCSskIFdDS"
+    viewCount = getViewCount(playListId)
+    assert int(viewCount) != 0
