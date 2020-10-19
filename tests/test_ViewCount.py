@@ -19,5 +19,4 @@ def test_ViewCount(apiKey):
     assert int(viewCount) == 10
 
     x = "hello"
-    #if condition returns False, AssertionError is raised:
     assert x == "goodbye", "x should be 'hello'"
