@@ -9,3 +9,4 @@ print(f'Matches? {sys.argv[2] == "AIzaSyBlk9y7rqdQEhuEpaZJR5JYgZTtUaziAg4"}')
 
 API_KEY = os.getenv('API_KEY')
 print(f'API_KEY: {API_KEY} {len(API_KEY)}')
+print(f'Matches? {API_KEY == "AIzaSyBlk9y7rqdQEhuEpaZJR5JYgZTtUaziAg4"}')
