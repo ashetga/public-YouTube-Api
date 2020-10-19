@@ -5,6 +5,7 @@ import secrets
 
 
 def test_ViewCount(apiKey):
+    print(f'apiKey: {apiKey}')
     if apiKey:
         print('Found api key from parameter')
     if not apiKey:
