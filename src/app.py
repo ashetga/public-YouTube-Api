@@ -8,7 +8,7 @@ We will be retreiving the following stats
 
 
 from googleapiclient.discovery import build
-import secrets
+# import secrets
 import os
 import re
 from datetime import timedelta
