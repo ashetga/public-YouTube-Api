@@ -9,6 +9,7 @@ We will be retreiving the following stats
 
 from googleapiclient.discovery import build
 import secrets
+import os
 import re
 from datetime import timedelta
 
@@ -18,7 +19,8 @@ def getCommaSeparatedText(iText):
 
 
 def ytAppBuilder():
-    return build("youtube", "v3", developerKey=secrets.apiKey)
+    API_KEY = os.getenv('API_KEY')
+    return build("youtube", "v3", developerKey=API_KEY)
 
 
 def getVideosForPlaylist(iPlayListId):
