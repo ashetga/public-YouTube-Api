@@ -17,3 +17,7 @@ def test_ViewCount(apiKey):
     viewCount = getViewCount(playListId)
     print(f'viewCount: {viewCount}')
     assert int(viewCount) == 10
+
+    x = "hello"
+    #if condition returns False, AssertionError is raised:
+    assert x == "goodbye", "x should be 'hello'"
